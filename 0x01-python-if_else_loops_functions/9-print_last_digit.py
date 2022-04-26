@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from unittest import result
-
-
 def print_last_digit(number):
     if number < 0:
         final = ((number * -1) % 10)
@@ -11,3 +8,4 @@ def print_last_digit(number):
         final = number
     print("{:d}".format(final), end="")
     return final
+
