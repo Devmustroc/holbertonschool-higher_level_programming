@@ -11,13 +11,13 @@ if __name__ == "__main__":
     num1 = int(argv[1])
     num2 = int(argv[3])
 
-    if op is '+':
+    if op == '+':
         print("{:d} + {:d} = {:d}".format(num1, num2, add(num1, num2)))
-    elif op is '-':
+    elif op == '-':
         print("{:d} - {:d} = {:d}".format(num1, num2, sub(num1, num2)))
-    elif op is '*':
+    elif op == '*':
         print("{:d} * {:d} = {:d}".format(num1, num2, mul(num1, num2)))
-    elif op is '/':
+    elif op == '/':
         print("{:d} / {:d} = {:d}".format(num1, num2, div(num1, num2)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
