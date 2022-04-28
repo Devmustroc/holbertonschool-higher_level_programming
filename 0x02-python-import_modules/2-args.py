@@ -10,3 +10,4 @@ if __name__ == "__main__":
         print("{:d} argements".format(args))
     for i in range(1, len(sys.argv)):
         print("{:d}: {:s}".format(i, sys.argv[i]))
+
