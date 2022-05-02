@@ -7,4 +7,4 @@ def print_matrix_integer(matrix=[[]]):
             if count < len(matrix[row]) - 1:
                 print(end=" ")
             count += 1
-        print("$")
+        print("")
