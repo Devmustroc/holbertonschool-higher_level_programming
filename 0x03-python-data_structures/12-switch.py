@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def switch():
     a = 89
     b = 10
