@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def square_matrix_map(matrix=[]):
-    matrix_2 = [[i ** 2 for i in row] for row in matrix]
-    return matrix_2
+    new_M = [[elem**2 for elem in row] for row in matrix]
+    return new_M
