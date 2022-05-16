@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
     dif = None
+
     try:
-        dif =  a / b
+        dif = a / b
     except ZeroDivisionError:
         return dif
     finally:
