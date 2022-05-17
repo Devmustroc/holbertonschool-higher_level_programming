@@ -2,14 +2,21 @@
 """Define Square Class"""
 
 class square():
-    """_
+    """
     private instance class attribute for a square
     """
 
     def __init__(self, size=0):
         """
+
         Args:
-            size (int, size): size of square
+            size: the size of square
+
+        Raises:
+            TypeError: exception
+            ValueError: exception
+        Return:
+            None.
         """
         if type(size) != int:
             raise TypeError("size must be an integer")
