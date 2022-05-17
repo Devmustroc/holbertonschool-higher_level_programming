@@ -1,7 +1,7 @@
 #!/usr/bon/python3
-    """
-        define class square
-    """
+"""define class square"""
+
+
 class Square():
     """
         Square class with private instance attribute size
@@ -11,6 +11,10 @@ class Square():
 
         Args:
             size : size of the square
+
+        Raises:
+            TypeError: exception
+            ValueError: exception
         """
         if type(size) != int:
             raise TypeError(""size must be an integer"")
