@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" empty class file """
 class Square():
-    """Empty Class """
+    """square empty class """
     pass
