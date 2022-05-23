@@ -5,5 +5,6 @@ Rectangle Class
 
 
 class Rectangle:
-    """class defined"""
+    """Class of Rectangle"""
+
     pass
