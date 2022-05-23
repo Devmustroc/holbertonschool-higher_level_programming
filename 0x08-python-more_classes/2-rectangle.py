@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Rectangle Class
-"""
+"""Rectangle Class"""
 
 
 class Rectangle:
@@ -17,8 +15,7 @@ class Rectangle:
     @property
     def width(self):
         """
-        function to return width if
-        setter checks have passed
+        function to return width if setter checks have passed
         """
         return self.__width
 
@@ -39,19 +36,9 @@ class Rectangle:
     @property
     def height(self):
         """
-        function to return height if
-        setter checks have passed
+        function to return height if setter checks have passed
         """
-        return (self.width * self.height)
-
-    def perimeter(self):
-        """
-        Returns perimeter of a rectangle
-        using given width and height
-        """
-        if self.height == 0 or self.width == 0:
-            return 0
-        return ((self.width + self.height) * 2)
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -66,3 +53,12 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+    def area(self):
+        """method to return area of width and height"""
+        return self.__width * self.__height
+
+    def perimeter(self):
+        """method to return perimeter of width and height"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return (self.__width + self.__height) * 2

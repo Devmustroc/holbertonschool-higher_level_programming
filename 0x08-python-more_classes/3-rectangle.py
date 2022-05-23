@@ -42,15 +42,6 @@ class Rectangle:
         """
         return (self.width * self.height)
 
-    def perimeter(self):
-        """
-        Returns perimeter of a rectangle
-        using given width and height
-        """
-        if self.height == 0 or self.width == 0:
-            return 0
-        return ((self.width + self.height) * 2)
-
     @height.setter
     def height(self, value):
         """
