@@ -123,4 +123,3 @@ class Rectangle:
         returns new rect where width == height == size
         """
         return (cls(size, size))
-
