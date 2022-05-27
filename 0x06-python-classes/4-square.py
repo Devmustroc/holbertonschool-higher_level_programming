@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Square class definition
+define square class
 """
 
 
-class Square:
+class Square():
     """
-    Square class with private instance attribute size
+    private instance attribute class size
     """
 
     def __init__(self, size=0):
@@ -24,15 +24,7 @@ class Square:
     @property
     def size(self):
         """size: size of the square
-        setter validating size is int and >= 0
-        Raise:
-             TypeError and ValueError
-        """
-        return (self.__size)
-
-    @size.setter
-    def size(self, value):
-        """size: size of the square
+        setter validating size is int Square class definition
         setter validating size is int and >= 0
         Raise:
              TypeError and ValueError
