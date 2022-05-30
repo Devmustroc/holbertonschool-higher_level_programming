@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Class Module
+"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
