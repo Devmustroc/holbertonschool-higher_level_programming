@@ -17,4 +17,4 @@ class BaseGeometry():
             raise TypeError(f"{name} must be an integer")
         """Checking if value is not less than 0"""
         if value <= 0:
-            raise TypeError(f"{name} must be greater than 0")
+            raise ValueError(f"{name} must be greater than 0")
