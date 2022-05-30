@@ -37,19 +37,3 @@ True
 >>> l.append(565)
 >>> l.print_sorted()
 [21, 232, 343, 565]
-
->>> l = MyList()
->>> l.append(14)
->>> l.append(13)
->>> l.append(12)
->>> l.append(11)
->>> l.append(10)
->>> l.print_sorted()
-[10, 11, 12, 13, 14]
-
->>> l.append(-434)
->>> l.append(-599)
->>> l.append(-4)
->>> l.append(-3)
->>> l.print_sorted()
-[-599, -434, -4, -3, 10, 11, 12, 13, 14]
