@@ -13,7 +13,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """Method that returns directory description"""
-        if attrs == None:
+        if attrs is None:
             return self.__dict__
         re_att = {}
         for key, val in self.__dict__.items():
