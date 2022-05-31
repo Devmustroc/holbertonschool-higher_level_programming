@@ -3,11 +3,11 @@
 import json
 
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """from_json_string  returns an object
     (python data struct) respresented by a JSON string
 
     Args:
     my_obj (obj): anything object e.g: list dict
     """
-    return(json.loads(my_obj))
+    return(json.loads(my_str))
