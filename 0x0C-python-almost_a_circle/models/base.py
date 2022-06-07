@@ -74,16 +74,19 @@ class Base:
         This function returns a list
         of instances
         """
-        fn = cls.__name__ + ".json"
-        lst = []
-        try:
-            with open(fn, mode="r") as myFile:
-                lst = cls.from_json_string(myFile.read())
-            for i, j in enumerate(lst):
-                lst[i] = cls.create(**lst[i])
-        except:
-            pass
-        return (lst)
+        filename = cls.__name__ + '.json'
+
+        if path.exists(filename) is False:
+            return []
+
+        with open(filename, mode='r', encoding='utf-8') as f:
+            objs = cls.from_json_string(f.read())
+            instances = []
+
+            for elem in objs:
+                instances.append(cls.create(**elem))
+
+            return instances
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
