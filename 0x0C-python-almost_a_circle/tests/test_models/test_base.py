@@ -4,6 +4,7 @@
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
+from models.square import Square
 
 
 class TestBase(unittest.TestCase):
@@ -45,3 +46,7 @@ class TestBase(unittest.TestCase):
         """Test passing more args to init method"""
         with self.assertRaises(TypeError):
             new = Base(1, 1)
+
+
+if __name__ == '__main__':
+    unittest.main()

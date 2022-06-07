@@ -4,6 +4,7 @@ import unittest
 from unittest import TestCase
 from models.rectangle import Rectangle
 from models.base import Base
+import pycodestyle
 
 
 class TestRectangleMethods(unittest.TestCase):
@@ -12,24 +13,6 @@ class TestRectangleMethods(unittest.TestCase):
     def settingUp(self):
         """ Method  for each test """
         Base._Base__nb_objects = 0
-
-    def test_new_rectangle(self):
-        """ Test new rectangle """
-        a = Rectangle(1, 1)
-        self.assertEqual(a.width, 1)
-        self.assertEqual(a.height, 1)
-        self.assertEqual(a.x, 0)
-        self.assertEqual(a.y, 0)
-        self.assertEqual(a.id, 6)
-
-    def test_new_rectangle_2(self):
-        """ Test new rectangle with all attributes """
-        b = Rectangle(2, 3, 5, 5, 4)
-        self.assertEqual(b.width, 2)
-        self.assertEqual(b.height, 3)
-        self.assertEqual(b.x, 5)
-        self.assertEqual(b.y, 5)
-        self.assertEqual(b.id, 4)
 
     def test_new_rectangle_3(self):
         """test new rectangle"""
@@ -116,3 +99,7 @@ class TestRectangleMethods(unittest.TestCase):
         """test passing invalid values"""
         with self.assertRaises(ValueError):
             new = Rectangle(0, -1)
+
+
+if __name__ == '__main__':
+    unittest.main()
