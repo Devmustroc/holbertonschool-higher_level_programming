@@ -4,7 +4,7 @@ A module that test differents behaviors
 of the Square class
 """
 import unittest
-import pycodestyle
+import pep8
 from models.base import Base
 from models.square import Square
 
@@ -18,7 +18,7 @@ class TestSquare(unittest.TestCase):
         """
         Test that checks PEP8 PYCODE
         """
-        style = pycodestyle.StyleGuide(quiet=True)
+        style = pep8.StyleGuide(quiet=True)
         result = style.check_files(['models/base.py'])
         self.assertEqual(result.total_errors, 0)
 

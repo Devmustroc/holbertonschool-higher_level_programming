@@ -4,7 +4,7 @@ A module that test differents behaviors
 of the Base class
 """
 import unittest
-import pycodestyle
+import pep8
 import os
 from models.base import Base
 from models.rectangle import Rectangle
@@ -20,7 +20,7 @@ class TestBase(unittest.TestCase):
         """
         Test that checks PYCODESTYLE pep8
         """
-        style = pycodestyle.StyleGuide(quiet=True)
+        style = pep8.StyleGuide(quiet=True)
         result = style.check_files(['models/base.py'])
         self.assertEqual(result.total_errors, 0)
 
