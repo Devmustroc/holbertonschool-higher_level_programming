@@ -9,7 +9,7 @@ import csv
 
 class Base:
     """Class parent of all class in the project"""
-    __nb_object = 0
+    __nb_object = 1
 
     def __init__(self, id=None):
         if id is not None:

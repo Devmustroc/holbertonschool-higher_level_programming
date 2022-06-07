@@ -22,7 +22,7 @@ class TestRectangleMethods(unittest.TestCase):
         self.assertEqual(new.height, 1)
         self.assertEqual(new.x, 0)
         self.assertEqual(new.y, 0)
-        self.assertEqual(new.id, 12)
+        self.assertEqual(new.id, 2)
 
     def test_new_rectangle_2(self):
         """ Test new rectangle with all attrs """
