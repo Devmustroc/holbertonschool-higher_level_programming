@@ -22,7 +22,7 @@ class TestBase(unittest.TestCase):
         """
         style = pycodestyle.StyleGuide(quiet=True)
         result = style.check_files(['models/base.py'])
-        self.assertEqual(result.total_errors, 1)
+        self.assertEqual(result.total_errors, 0)
 
     def test_id_as_positive(self):
         """
@@ -111,3 +111,7 @@ class TestBase(unittest.TestCase):
             "'Base' object has no attribute 'to_dictionary'",
             str(msg.exception)
         )
+
+
+if __name__ == '__main__':
+    unittest.main()

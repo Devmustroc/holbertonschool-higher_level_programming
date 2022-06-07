@@ -6,7 +6,6 @@ of the Square class
 import unittest
 import pycodestyle
 from models.base import Base
-from models.rectangle import Rectangle
 from models.square import Square
 
 
@@ -21,7 +20,7 @@ class TestSquare(unittest.TestCase):
         """
         style = pycodestyle.StyleGuide(quiet=True)
         result = style.check_files(['models/base.py'])
-        self.assertEqual(result.total_errors, 1)
+        self.assertEqual(result.total_errors, 0)
 
     def test_getter(self):
         r1 = Square(5)
@@ -109,3 +108,7 @@ class TestSquare(unittest.TestCase):
         s1_dictionary = s1.to_dictionary()
         expected = {'id': 5, 'x': 5, 'size': 5, 'y': 5}
         self.assertEqual(s1_dictionary, expected)
+
+
+if __name__ == '__main__':
+    unittest.main()

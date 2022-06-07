@@ -20,7 +20,7 @@ class TestRectangle(unittest.TestCase):
         """
         style = pycodestyle.StyleGuide(quiet=True)
         result = style.check_files(['models/base.py'])
-        self.assertEqual(result.total_errors, 1)
+        self.assertEqual(result.total_errors, 0)
 
     def test_rectangle_subclass(self):
         """
@@ -132,3 +132,7 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(ValueError):
             Rectangle(5, 9, 5, -4798576398576)
             raise ValueError()
+
+
+if __name__ == '__main__':
+    unittest.main()
