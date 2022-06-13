@@ -1,6 +1,5 @@
 #ifndef _SORT_H_
 #define _SORT_H_
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -14,9 +13,9 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 int smallest(int array[], int k, int n);
