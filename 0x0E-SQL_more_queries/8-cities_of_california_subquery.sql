@@ -8,4 +8,3 @@ SELECT id
 FROM states
 WHERE name LIKE '%California%'
 ) ORDER BY id ASC;
-
