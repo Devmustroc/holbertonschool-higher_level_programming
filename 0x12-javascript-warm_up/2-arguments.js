@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
-const Ar_Search = process.argv.length;
+const arSearch = process.argv.length;
 
-if (Ar_Search === 2) {
+if (arSearch === 2) {
   console.log('No argument');
-} else if (Ar_Search === 3) {
+} else if (arSearch === 3) {
   console.log('Argument found');
 } else {
   console.log('Arguments found');
