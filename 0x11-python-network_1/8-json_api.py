@@ -7,16 +7,17 @@ from sys import argv
 
 if __name__ == "__main__":
 
-    q = ""
-    if len(argv) > 1:
-        q = argv[1]
-    r = post('http://0.0.0.0:5000/search_user', data={'q': q})
-    try:
-        out = r.json()
-    except TypeError:
-        print("Not a valid JSON")
+    if len(sys.argv) == 1:
+        obj = {'q': ""}
     else:
-        if out:
-            print("[{}] {}".format(out['id'], out['name']))
-        else:
+        obj = {'q': sys.argv[1]}
+    r = requests.post('http://0.0.0.0:5000/search_user', obj)
+
+    try:
+        dict = r.json()
+        if len(dict) == 0:
             print("No result")
+        else:
+            print("[{}] {}".format(dict['id'], dict['name']))
+    except ValueError:
+        print("Not a valid JSON")
