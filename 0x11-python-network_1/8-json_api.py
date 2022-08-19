@@ -14,7 +14,7 @@ if __name__ == "__main__":
     lk = post('http://0.0.0.0:5000/search_user', data={'q': q})
     try:
         out = lk.json()
-    except:
+    except TypeError:
         print("Not a valid JSON")
     else:
         if out:
