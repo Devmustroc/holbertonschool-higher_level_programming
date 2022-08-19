@@ -1,23 +1,19 @@
 #!/usr/bin/python3
-'''
+"""
 Send a POST request
-'''
-from os import link
-from requests import post
+"""
+import requests as req
 from sys import argv
 
 if __name__ == "__main__":
-
-    q = ""
-    if len(argv) > 1:
-        q = argv[1]
-    lk = post('http://0.0.0.0:5000/search_user', data={'q': q})
+    url = 'http://0.0.0.0:5000/search_user'
+    q = argv[1] if len(argv) > 1 else ""
+    res = req.post(url, data={'q': q})
     try:
-        out = lk.json()
-    except TypeError:
-        print("Not a valid JSON")
-    else:
-        if out:
-            print("[{}] {}".format(out['id'], out['name']))
-        else:
+        res_dic = res.json()
+        if res_dic == {}:
             print("No result")
+        else:
+            print("[{}] {}".format(res_dic.get('id'), res_dic.get('name')))
+    except:
+        print("Not a valid JSON")
