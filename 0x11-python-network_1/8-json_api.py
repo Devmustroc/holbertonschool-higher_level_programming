@@ -1,21 +1,22 @@
-#!/usr/bin/pyhton3
-"""
-takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user
-with the letter as a parameter.
-"""
+#!/usr/bin/python3
 
-import requests as req
+'''Send a POST request'''
+
+from requests import post
 from sys import argv
 
 if __name__ == "__main__":
-    url = 'http://0.0.0.0:5000/search_user'
-    q = argv[1] if len(argv) > 1 else ""
-    res = req.post(url, data={'q': q})
+
+    q = ""
+    if len(argv) > 1:
+        q = argv[1]
+    r = post('http://0.0.0.0:5000/search_user', data={'q': q})
     try:
-        dic_resu = res.json()
-        if dic_resu == {}:
-            print("No result")
-        else:
-            print("[{}] {}".format(dic_resu.get('id'), dic_resu.get('name')))
+        out = r.json()
     except TypeError:
         print("Not a valid JSON")
+    else:
+        if out:
+            print("[{}] {}".format(out['id'], out['name']))
+        else:
+            print("No result")
