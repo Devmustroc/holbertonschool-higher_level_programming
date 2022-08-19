@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-takes in a URL, sends a request to the URL and displays the body of response
+takes in a URL, sends a request to the URL
+and displays the body of response
 """
 import requests as req
 from sys import argv
