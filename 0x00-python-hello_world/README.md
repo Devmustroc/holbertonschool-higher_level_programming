@@ -1,6 +1,10 @@
 # 0x00. Python - Hello, World
+## What is Python
+
+Python is a high-level, interpreted programming language that is versatile, easy-to-use, and popular. It is open-source and has a large, supportive community that provides resources and tools for users. It is used for a wide range of purposes, including web development, scientific computing, and data analysis. Its simplicity, versatility, and strong community make it an excellent choice for both beginner and advanced programmers.
 
 ## Description
+
 What you should learn from this project:
 
 Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
