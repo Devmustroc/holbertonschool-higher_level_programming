@@ -5,18 +5,7 @@ Python is a high-level, interpreted programming language that is versatile, easy
 
 ## Description
 
-What you should learn from this project:
-
-Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
-Who created Python
-Who is Guido van Rossum
-Where does the name ‘Python’ come from
-What is the Zen of Python
-How to use the Python interpreter
-How to print text and variables using print
-How to use strings
-What are indexing and slicing in Python
-What is the official Holberton Python coding style and how to check your code with PEP 8
+These projects aimed to help the student at Holberton School develop their skills in software development, particularly in shell scripting and Python programming. The projects covered various aspects of these programming languages, including running Python scripts and code from shell scripts, printing strings, integers, and floats with different levels of precision, and manipulating strings to produce specific outputs. The student also worked on projects that involved copying, cutting, and pasting code to achieve a desired result, as well as learning about object-oriented programming in Python. Another project focused on converting Python bytecode into a Python function. All these projects are available in the student's repository for others to view and learn from.
 
 ---
 
