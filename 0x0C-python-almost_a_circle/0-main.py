@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ 0-main """
-from models.base import Base
+from models.base import Base # import class Base
 
-if __name__ == "__main__":
+if __name__ == "__main__": # if the file is executed as the main program
 
     b1 = Base()
     print(b1.id)
