@@ -2,18 +2,18 @@
 """
 Square Square Module
 """
-Rectangle = __import__('9-rectangle').Rectangle
+Rectangle = __import__('9-rectangle').Rectangle # import Rectangle class
 
 
-class Square(Rectangle):
+class Square(Rectangle): # Square
     """class inherits from Rectangle"""
 
-    def __init__(self, size):
+    def __init__(self, size): # initialization method
         """initialization method"""
-        self.integer_validator('size', size)
-        self.__size = size
-        super().__init__(self.__size, self.__size)
+        self.integer_validator('size', size) # validate size
+        self.__size = size # set size
+        super().__init__(self.__size, self.__size)  # call super class
 
-    def __str__(self):
+    def __str__(self): # print method
         """print method"""
-        return (f"[{__class__.__name__}] {self.__size}/{self.__size}")
+        return (f"[{__class__.__name__}] {self.__size}/{self.__size}") # return string

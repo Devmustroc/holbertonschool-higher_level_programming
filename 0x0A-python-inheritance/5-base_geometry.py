@@ -3,7 +3,6 @@
 empty class module
 """
 
-
 class BaseGeometry():
     """empty class"""
-    pass
+    pass # empty class
