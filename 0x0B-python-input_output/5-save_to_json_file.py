@@ -3,13 +3,12 @@
 import json
 
 
-def save_to_json_file(my_obj, filename):
-    """ save_to_json_file writes an object
-    to a text file
-
-    Args:
-        my_obj (obj): any object for example list, dict
-        filename: file name
+def save_to_json_file(my_obj, filename): # function save_to_json_file
+    """ save_to_json_file(my_obj, filename)
+    Writes an Object to a text file, using a JSON representation
+    args:
+        my_obj: object to be converted to JSON
+        filename: file to write JSON representation of my_obj
     """
-    with open(filename, 'w', encoding='utf-8') as f:
-        return(json.dump(my_obj, f))
+    with open(filename, 'w', encoding='utf-8') as f:    # open file in write mode
+        return(json.dump(my_obj, f))   # write JSON representation of my_obj to file

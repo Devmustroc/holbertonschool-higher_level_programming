@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-"""File name : 2-append_write.py"""
+"""
+2-append_write.py
+append_write(filename="", text="")
+"""
 
 
-def append_write(filename="", text=""):
-    """append_write appends a string
-    at the end of a text file (UTF8)
-
-    Args:
-        filename(str): default.
-        text(str): text to add. Default
+def append_write(filename="", text=""): #
+    """append_write(filename="", text="")
+    Appends a string at the end of a text file (UTF8)
+    and returns the number of characters added
     """
 
-    with open(filename, 'a', encoding='utf-8') as f:
-        return f.write(text)
+    with open(filename, 'a', encoding='utf-8') as f: # open file in append mode
+        return f.write(text) # write text to file and return number of characters written

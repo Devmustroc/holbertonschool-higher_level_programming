@@ -4,10 +4,9 @@ import json
 
 
 def from_json_string(my_str):
-    """from_json_string  returns an object
-    (python data struct) respresented by a JSON string
-
-    Args:
-    my_obj (obj): anything object e.g: list dict
+    """from_json_string(my_str)
+    Returns an object (Python data structure) represented by a JSON string
+    args:
+        my_str: JSON string to be converted to object
     """
-    return(json.loads(my_str))
+    return(json.loads(my_str)) # return object represented by my_str
