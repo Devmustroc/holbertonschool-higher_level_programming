@@ -5,12 +5,13 @@ Method to check class
 
 
 def is_same_class(obj, a_class):
-    """check for class if same type of object
-    args:
-        obj: object import
-        a_class: class type
+    """
+    Method to check class
+    Args:
+        obj: object
+        a_class: class
     Return:
         True or False
     """
 
-    return all([type(obj) == a_class])
+    return all([type(obj) == a_class]) # return True or False
